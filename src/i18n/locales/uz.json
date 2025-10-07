@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "gallery": "Galereya",
+    "about": "Rassom haqida",
+    "faq": "Savollar",
+    "contact": "Aloqa",
+    "cart": "Savat"
+  },
+  "home": {
+    "hero_title": "Abadiy san'atni kashf eting",
+    "hero_subtitle": "Bibisoraning zamonaviy san'at asarlari to'plamini kashf eting",
+    "view_gallery": "Galereyani ko'rish",
+    "featured_title": "Tanlangan asarlar",
+    "featured_subtitle": "To'plamimizdan qo'lda tanlangan asarlar"
+  },
+  "gallery": {
+    "title": "San'at galereyasi",
+    "search_placeholder": "Asarlarni qidirish...",
+    "filter_all": "Hammasi",
+    "filter_abstract": "Abstrakt",
+    "filter_portrait": "Portret",
+    "filter_landscape": "Landshaft",
+    "filter_contemporary": "Zamonaviy",
+    "add_to_cart": "Savatga qo'shish",
+    "remove_from_cart": "Savatdan o'chirish",
+    "view_details": "Batafsil",
+    "no_results": "Asarlar topilmadi"
+  },
+  "artwork": {
+    "price": "Narxi",
+    "medium": "Material",
+    "dimensions": "O'lchamlari",
+    "year": "Yil",
+    "share": "Ulashish",
+    "wishlist": "Sevimlilarga qo'shish",
+    "related": "O'xshash asarlar"
+  },
+  "cart": {
+    "title": "Xarid savati",
+    "empty": "Savatingiz bo'sh",
+    "subtotal": "Oraliq jami",
+    "total": "Jami",
+    "checkout": "Xaridni rasmiylashtirish",
+    "continue_shopping": "Xaridni davom ettirish",
+    "remove": "O'chirish",
+    "items": "mahsulotlar"
+  },
+  "about": {
+    "title": "Rassom haqida",
+    "biography": "Biografiya",
+    "philosophy": "Falsafa",
+    "exhibitions": "Ko'rgazmalar",
+    "awards": "Mukofotlar"
+  },
+  "faq": {
+    "title": "Tez-tez so'raladigan savollar",
+    "q1": "San'at asarini qanday sotib olsam bo'ladi?",
+    "a1": "Shunchaki asarni savatchaga qo'shing va to'lovga o'ting. Biz turli to'lov usullarini qabul qilamiz.",
+    "q2": "Xalqaro jo'natma amalga oshirasizmi?",
+    "a2": "Ha, biz butun dunyo bo'ylab jo'natamiz. Jo'natma narxi manzilga qarab farq qiladi.",
+    "q3": "Qaytarish siyosatingiz qanday?",
+    "a3": "Biz asl holatidagi barcha san'at asarlari uchun 30 kunlik qaytarish siyosatini taklif qilamiz.",
+    "q4": "Bu asl asarlar yoki nusxalarmi?",
+    "a4": "Har bir asar sahifasida bu asl asar yoki cheklangan nashr nusxasi ekanligi ko'rsatilgan.",
+    "q5": "San'at asarimga qanday g'amxo'rlik qilishim kerak?",
+    "a5": "San'at asarini to'g'ridan-to'g'ri quyosh nuridan va namlikdan uzoqroq tuting. Yumshoq mato bilan ehtiyotkorlik bilan arting."
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Savollaringiz bormi? Sizdan eshitishdan xursand bo'lamiz",
+    "name": "Ism",
+    "email": "Elektron pochta",
+    "message": "Xabar",
+    "send": "Xabar yuborish",
+    "success": "Rahmat! Xabaringiz yuborildi.",
+    "social": "Bizni kuzating"
+  },
+  "footer": {
+    "copyright": "© 2025 Bibisora. Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Nimadir noto'g'ri ketdi",
+    "try_again": "Qayta urinish"
+  }
+}

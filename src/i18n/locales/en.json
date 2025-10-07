@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "home": {
+    "hero_title": "Discover Timeless Art",
+    "hero_subtitle": "Explore the exquisite collection of contemporary artworks by Bibisora",
+    "view_gallery": "View Gallery",
+    "featured_title": "Featured Artworks",
+    "featured_subtitle": "Handpicked selections from our collection"
+  },
+  "gallery": {
+    "title": "Art Gallery",
+    "search_placeholder": "Search artworks...",
+    "filter_all": "All",
+    "filter_abstract": "Abstract",
+    "filter_portrait": "Portrait",
+    "filter_landscape": "Landscape",
+    "filter_contemporary": "Contemporary",
+    "add_to_cart": "Add to Cart",
+    "remove_from_cart": "Remove from Cart",
+    "view_details": "View Details",
+    "no_results": "No artworks found"
+  },
+  "artwork": {
+    "price": "Price",
+    "medium": "Medium",
+    "dimensions": "Dimensions",
+    "year": "Year",
+    "share": "Share",
+    "wishlist": "Save to Wishlist",
+    "related": "Related Artworks"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "continue_shopping": "Continue Shopping",
+    "remove": "Remove",
+    "items": "items"
+  },
+  "about": {
+    "title": "About the Artist",
+    "biography": "Biography",
+    "philosophy": "Philosophy",
+    "exhibitions": "Exhibitions",
+    "awards": "Awards"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How can I purchase an artwork?",
+    "a1": "Simply add the artwork to your cart and proceed to checkout. We accept various payment methods.",
+    "q2": "Do you ship internationally?",
+    "a2": "Yes, we ship worldwide. Shipping costs vary by location.",
+    "q3": "What is your return policy?",
+    "a3": "We offer a 30-day return policy for all artworks in original condition.",
+    "q4": "Are the artworks original or prints?",
+    "a4": "Each artwork page specifies whether it's an original piece or a limited edition print.",
+    "q5": "How do I care for my artwork?",
+    "a5": "Keep artwork away from direct sunlight and moisture. Dust gently with a soft cloth."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We'd love to hear from you",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Thank you! Your message has been sent.",
+    "social": "Follow Us"
+  },
+  "footer": {
+    "copyright": "© 2025 Bibisora. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "try_again": "Try again"
+  }
+}
