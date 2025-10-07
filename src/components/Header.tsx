@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { ShoppingCart, Menu, X, Globe } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { useCart } from '@/contexts/CartContext';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { ShoppingCart, Menu, X, Globe } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { useCart } from "@/contexts/CartContext";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from "@/components/ui/dropdown-menu";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -19,24 +19,25 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { path: '/', label: t('nav.home') },
-    { path: '/gallery', label: t('nav.gallery') },
-    { path: '/about', label: t('nav.about') },
-    { path: '/faq', label: t('nav.faq') },
-    { path: '/contact', label: t('nav.contact') },
+    { path: "/", label: t("nav.home") },
+    { path: "/gallery", label: t("nav.gallery") },
+    { path: "/about", label: t("nav.about") },
+    { path: "/faq", label: t("nav.faq") },
+    { path: "/contact", label: t("nav.contact") },
   ];
 
   const languages = [
-    { code: 'en', label: 'English', flag: 'En' },
-    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-    { code: 'uz', label: 'O\'zbek', flag: '🇺🇿' },
+    { code: "en", label: "English", flag: "En" },
+    { code: "ru", label: "Русский", flag: "🇷🇺" },
+    { code: "uz", label: "O'zbek", flag: "🇺🇿" },
   ];
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
 
-  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
+  const currentLanguage =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
   const totalItems = getTotalItems();
 
   return (
@@ -45,12 +46,9 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <motion.h1 
-              className="text-2xl font-serif font-bold gradient-primary bg-clip-text text-transparent"
-              whileHover={{ scale: 1.05 }}
-            >
+            <div className="text-2xl font-serif font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
               Bibisora
-            </motion.h1>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -61,8 +59,8 @@ export const Header = () => {
                 to={link.path}
                 className={`text-sm font-medium transition-smooth relative ${
                   location.pathname === link.path
-                    ? 'text-primary'
-                    : 'text-foreground hover:text-primary'
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
                 }`}
               >
                 {link.label}
@@ -83,7 +81,9 @@ export const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="gap-2">
                   <Globe className="h-4 w-4" />
-                  <span className="hidden sm:inline">{currentLanguage.flag}</span>
+                  <span className="hidden sm:inline">
+                    {currentLanguage.flag}
+                  </span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-popover z-50">
@@ -91,7 +91,7 @@ export const Header = () => {
                   <DropdownMenuItem
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
-                    className={i18n.language === lang.code ? 'bg-accent' : ''}
+                    className={i18n.language === lang.code ? "bg-accent" : ""}
                   >
                     <span className="mr-2">{lang.flag}</span>
                     {lang.label}
@@ -133,7 +133,7 @@ export const Header = () => {
           {isMobileMenuOpen && (
             <motion.nav
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden mt-4 pb-4 space-y-2"
             >
@@ -144,8 +144,8 @@ export const Header = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-2 px-4 rounded-lg transition-smooth ${
                     location.pathname === link.path
-                      ? 'bg-primary text-primary-foreground'
-                      : 'hover:bg-accent'
+                      ? "bg-primary text-primary-foreground"
+                      : "hover:bg-accent"
                   }`}
                 >
                   {link.label}
