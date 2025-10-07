@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import heroBanner from '@/assets/hero-banner.jpg';
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import heroBanner from "@/assets/hero-banner.jpg";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -17,7 +17,7 @@ export const Hero = () => {
         transition={{ duration: 1.5 }}
         className="absolute inset-0"
       >
-        <div 
+        <div
           className="w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBanner})` }}
         />
@@ -33,8 +33,8 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">
-              <span className="gradient-primary bg-clip-text text-transparent">
-                {t('home.hero_title')}
+              <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent inline-block">
+                {t("home.hero_title")}
               </span>
             </h1>
           </motion.div>
@@ -45,7 +45,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            {t('home.hero_subtitle')}
+            {t("home.hero_subtitle")}
           </motion.p>
 
           <motion.div
@@ -54,8 +54,11 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <Link to="/gallery">
-              <Button size="lg" className="group gradient-primary text-primary-foreground shadow-elegant">
-                {t('home.view_gallery')}
+              <Button
+                size="lg"
+                className="group gradient-primary text-primary-foreground shadow-elegant"
+              >
+                {t("home.view_gallery")}
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-smooth" />
               </Button>
             </Link>
@@ -65,27 +68,27 @@ export const Hero = () => {
 
       {/* Decorative Elements */}
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, -20, 0],
-          rotate: [0, 5, 0]
+          rotate: [0, 5, 0],
         }}
-        transition={{ 
-          duration: 6, 
+        transition={{
+          duration: 6,
           repeat: Infinity,
-          ease: "easeInOut" 
+          ease: "easeInOut",
         }}
         className="absolute bottom-10 left-10 w-32 h-32 rounded-full bg-primary/20 blur-3xl"
       />
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, 20, 0],
-          rotate: [0, -5, 0]
+          rotate: [0, -5, 0],
         }}
-        transition={{ 
-          duration: 8, 
+        transition={{
+          duration: 8,
           repeat: Infinity,
           ease: "easeInOut",
-          delay: 1
+          delay: 1,
         }}
         className="absolute top-20 right-10 w-40 h-40 rounded-full bg-accent/20 blur-3xl"
       />
